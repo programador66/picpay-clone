@@ -12,8 +12,8 @@ export const Container = styled.ScrollView.attrs(() => ({
 
 export const Option = styled.TouchableOpacity`
     background: ${({bgColor}) => bgColor};
-    width: 150px;
-    height: 200px;
+    width: 140px;
+    height: 190px;
     border-radius: 8px;
     padding: 15px;
     justify-content: space-between;
