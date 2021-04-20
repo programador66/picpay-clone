@@ -2,9 +2,9 @@ import React from 'react';
 import {
    Wrapper, Header, HeaderContainer, Title, BalancedContainer,
    Value, Bold, EyeButton, Info, Actions, Action, ActionLabel, UseBalance, UseBalanceTitle,
-   PaymentMethods, PaymentMethodsTitle, Card, CardDetails, CardInfo, CardTitle, Img
+   PaymentMethods, PaymentMethodsTitle, Card, CardDetails, CardInfo, CardTitle, Img, CardBody, AddButton, AddLabel, UseTicketContainer, UseTicketButton, UseTicketLabel
 } from './styles';
-import { Feather, MaterialCommunityIcons, FontAwesome } from '@expo/vector-icons';
+import { Feather, MaterialCommunityIcons, FontAwesome, AntDesign } from '@expo/vector-icons';
 import { Switch } from 'react-native';
 
 import creditCard from '../../images/credit-card.png';
@@ -53,18 +53,39 @@ const Wallet = () => {
                </PaymentMethodsTitle>
 
             <Card>
-               <CardDetails>
-                  <CardTitle>
-                     Cadastre seu cartão de crédito
+               <CardBody>
+                  <CardDetails>
+                     <CardTitle>
+                        Cadastre seu cartão de crédito
                   </CardTitle>
-                  
-                  <CardInfo>
-                     Cadastre seu cartão de crédito para poder fazer pagamentos mesmo 
-                     quando nao tiver saldo no seu PicPay.
+
+                     <CardInfo>
+                        Cadastre seu cartão de crédito para poder fazer pagamentos mesmo
+                        quando nao tiver saldo no seu PicPay.
                      </CardInfo>
-               </CardDetails>
-               <Img source={creditCard} resizeMode="contain" />
+                  </CardDetails>
+                  <Img source={creditCard} resizeMode="contain" />
+               </CardBody>
+
+               <AddButton>
+
+                  <AntDesign name="pluscircleo" size={30} color="#0DB060" />
+                  <AddLabel>
+                     Adicionar Cartão de crédito
+                  </AddLabel>
+
+               </AddButton>
             </Card>
+
+            <UseTicketContainer>
+               <UseTicketButton>
+                  <MaterialCommunityIcons name="ticket-outline" size={20} color="#0DB060" />
+                  <UseTicketLabel>
+                     Usar código Promocional
+                  </UseTicketLabel>
+               </UseTicketButton>
+            </UseTicketContainer>
+
          </PaymentMethods>
       </Wrapper>
    )

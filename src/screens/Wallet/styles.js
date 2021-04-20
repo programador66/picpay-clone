@@ -98,6 +98,10 @@ export const Card = styled.View`
     padding: 15px;
     border-radius: 8px;
     margin-top: 10px;
+   
+`;
+
+export const CardBody = styled.View`
     flex-direction: row;
 `;
 
@@ -121,4 +125,35 @@ export const Img = styled.Image`
     width: 60px;
 `;
 
-// 27:18
+export const AddButton = styled.TouchableOpacity`
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+`;
+
+export const AddLabel = styled.Text`
+    color: #0DB060;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+`;
+
+export const UseTicketContainer = styled.View`
+    align-items: center;
+    margin-top: 26px;
+`;
+
+export const UseTicketButton = styled.TouchableOpacity`
+    flex-direction: row;
+`;
+
+export const UseTicketLabel = styled.Text`
+    color: #0DB060;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+    text-decoration-line: underline;
+`;
+
+
+// 31 : 43
